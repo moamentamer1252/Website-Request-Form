@@ -150,11 +150,11 @@
             <input type="hidden" name="access_key" value="fd3cd370-e0b6-4478-b9f6-b7a36726403b">
             <h2>Website Request Form</h2>
             <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" required pattern="\b\w+\b \b\w+\b \b\w+\b">
             <label for="phone">Phone Number:</label>
             <input type="tel" pattern="[0-9]{11}" id="phone" name="phone" maxlength="11" required>
             <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required pattern="\b\w+\b \b\w+\b \b\w+\b">
             <label for="website-type">Website Type:</label>
             <select id="website-type" name="website-type" required>
                 <option value="restaurant">Restaurant</option>
@@ -170,6 +170,7 @@
                 <option value="arabic">Arabic</option>
                 <option value="german">German</option>
                 <option value="french">French</option>
+                <option value="English with Arabic toggle">English with Arabic toggle</option>
             </select>
             <label for="message">Message:</label>
             <textarea id="message" name="message" cols="100" rows="4"></textarea>
